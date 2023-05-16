@@ -1,0 +1,362 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+nav {
+  width: 100%;
+  height: 80px;
+  position: fixed;
+  z-index: 1;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+nav .hambrgr {
+  display: none;
+}
+nav .firstdiv {
+  color: orangered;
+  cursor: pointer;
+  font-size: 30px;
+}
+nav .secnddiv ul {
+  display: flex;
+  gap: 20px;
+}
+nav .secnddiv ul li {
+  list-style: none;
+}
+nav .secnddiv ul li a {
+  color: rgba(0, 0, 0, 0.76);
+  text-decoration: none;
+  font-weight: bold;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+nav .secnddiv ul li a:hover {
+  color: orangered;
+}
+@media screen and (max-width: 1000px) {
+  nav .hambrgr {
+    display: block;
+    font-size: 30px;
+  }
+  nav .secnddiv {
+    display: none;
+  }
+}
+
+header {
+  padding-top: 80px;
+  background-image: url(https://startbootstrap.github.io/startbootstrap-creative/assets/img/bg-masthead.jpg);
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 650px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header div {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+  width: 50%;
+  color: white;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+header div h2 {
+  font-size: 40px;
+  text-align: center;
+  width: 70%;
+}
+header div .ptags {
+  border: 2px solid rgb(255, 102, 0);
+  width: 10%;
+}
+header div .ptagfirst {
+  text-align: center;
+}
+header div a {
+  text-decoration: none;
+  color: white;
+  background-color: rgba(255, 68, 0, 0.664);
+  padding: 20px 40px;
+  border: 0;
+  border-radius: 45px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+header div a:hover {
+  background-color: orangered;
+}
+
+.headersecnd {
+  background-image: none;
+  background-color: orangered;
+  height: 440px;
+}
+.headersecnd .ptags {
+  border: 2px solid white;
+}
+.headersecnd h2 {
+  font-size: 30px;
+  width: 100%;
+}
+.headersecnd a {
+  color: rgba(0, 0, 0, 0.822);
+  background-color: white;
+}
+.headersecnd a:hover {
+  background-color: rgba(255, 255, 255, 0.637);
+}
+
+.headerthre {
+  margin: 0;
+  background-image: none;
+  background-color: black;
+  width: 100%;
+  height: 250px;
+}
+.headerthre h2 {
+  width: 100%;
+  font-size: 25px;
+  text-align: center;
+}
+.headerthre a {
+  color: black;
+  background-color: white;
+}
+
+@media screen and (max-width: 768px) {
+  .headerfirst {
+    height: 450px;
+  }
+  .headerfirst h2 {
+    font-size: 30px;
+  }
+  .headerfirst p {
+    font-size: 15px;
+  }
+  .headersecnd h2 {
+    font-size: 20px;
+  }
+  .headersecnd p {
+    font-size: 15px;
+  }
+  .headerthre h2 {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 568px) {
+  header a {
+    font-size: 10px;
+  }
+  .headerfirst h2 {
+    font-size: 20px;
+  }
+  .headerfirst p {
+    font-size: 10px;
+  }
+  .headersecnd h2 {
+    font-size: 10px;
+  }
+  .headersecnd p {
+    font-size: 10px;
+  }
+  .headerthre {
+    height: 400px;
+  }
+  .headerthre h2 {
+    font-size: 10px;
+  }
+}
+section {
+  margin: 10% 0 0 0;
+}
+section div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+section div h3 {
+  font-size: 30px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+section div h3 .ptagsecnnd {
+  margin-top: 10px;
+  border-top: 2px solid black;
+  border-bottom: 2px solid orangered;
+  width: 25%;
+}
+section div div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10%;
+  width: 20%;
+}
+section div div h4 {
+  font-size: 20px;
+  text-align: center;
+}
+section div div p {
+  font-size: 15px;
+  opacity: 0.7;
+  text-align: center;
+}
+section div div i {
+  font-size: 40px;
+  color: orangered;
+}
+@media screen and (max-width: 912px) {
+  section .divicon {
+    flex-direction: column;
+  }
+}
+
+.sectionphoto div {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 0;
+  height: 500px;
+}
+.sectionphoto div .divfirstp {
+  background-color: rgba(255, 68, 0, 0);
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  color: rgba(255, 255, 255, 0);
+  margin: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sectionphoto div .divfirstp:hover {
+  color: white;
+  background-color: rgba(255, 68, 0, 0.484);
+}
+.sectionphoto div div {
+  display: block;
+}
+.sectionphoto div .div1 {
+  background-image: url(https://startbootstrap.github.io/startbootstrap-creative/assets/img/portfolio/thumbnails/1.jpg);
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+.sectionphoto div .div2 {
+  background-image: url(https://startbootstrap.github.io/startbootstrap-creative/assets/img/portfolio/thumbnails/2.jpg);
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+.sectionphoto div .div3 {
+  background-image: url(https://startbootstrap.github.io/startbootstrap-creative/assets/img/portfolio/thumbnails/3.jpg);
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+.sectionphoto div .div4 {
+  background-image: url(https://startbootstrap.github.io/startbootstrap-creative/assets/img/portfolio/thumbnails/4.jpg);
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+.sectionphoto div .div5 {
+  background-image: url(https://startbootstrap.github.io/startbootstrap-creative/assets/img/portfolio/thumbnails/5.jpg);
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+.sectionphoto div .div6 {
+  background-image: url(https://startbootstrap.github.io/startbootstrap-creative/assets/img/portfolio/thumbnails/6.jpg);
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+@media screen and (max-width: 912px) {
+  .sectionphoto div {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (max-width: 512px) {
+  .sectionphoto div {
+    grid-template-columns: 1fr;
+  }
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin: 5% 0 0 0;
+}
+footer h2 {
+  font-size: 30px;
+}
+footer .ph2 {
+  border-top: 1px solid black;
+  border-bottom: 2px solid orangered;
+  width: 5%;
+}
+footer .pnw {
+  width: 30%;
+  text-align: center;
+}
+footer input,
+footer textarea {
+  font-size: 100%;
+  width: 30%;
+  padding: 12px;
+  border: 3px solid #efefef;
+  border-radius: 4px;
+  outline: none;
+  resize: vertical;
+  transition: 0.7s;
+}
+footer input:focus,
+footer textarea:focus {
+  border-color: rgba(255, 68, 0, 0.567);
+  box-shadow: 0 0 8px orangered;
+}
+footer .insub, footer .insub:focus {
+  border-radius: 30px;
+  background-color: orangered;
+  color: white;
+  opacity: 0.7;
+  box-shadow: none;
+  border: none;
+}
+footer div {
+  margin-top: 100px;
+  background-color: rgb(219, 218, 217);
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 990px) {
+  footer input,
+  footer textarea {
+    width: 90%;
+  }
+  footer .pnw {
+    width: 90%;
+  }
+}/*# sourceMappingURL=main.css.map */
